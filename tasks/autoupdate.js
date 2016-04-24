@@ -30,9 +30,9 @@ module.exports = function (grunt) {
       grunt.log.writeln('Running npm update...');
 
       var shelljs = require('shelljs');
-      shelljs.exec('npm update', { silent : true });
+      shelljs.exec('npm install');
 
-      grunt.log.writeln('... done!');
+      grunt.log.writeln('... done updating module dependencies!');
 
       var args = process.argv.splice(2, process.argv.length);
       args.unshift('grunt');
