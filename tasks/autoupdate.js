@@ -29,9 +29,9 @@ module.exports = function (grunt) {
       grunt.log.subhead('New package.json version detected (from '+previousPkgVersion+' to '+pkgVersion+')');
       grunt.log.writeln('Running npm update...');
 
-      var shelljs = require('shelljs');
-      shelljs.exec('npm install');
-
+      var spawn = require('child_process').spawn;
+      var ls = spawn('npm', ['install']);
+      
       grunt.log.writeln('... done updating module dependencies!');
 
       var args = process.argv.splice(2, process.argv.length);
