@@ -27,7 +27,7 @@ module.exports = function (grunt) {
 
     if( previousPkgVersion !== pkgVersion ){
       grunt.log.subhead('New package.json version detected (from '+previousPkgVersion+' to '+pkgVersion+')');
-      grunt.log.writeln('Running npm update...');
+      grunt.log.writeln('Running npm install...');
 
       var spawn = require('child_process').spawn;
       var ls = spawn('npm', ['install']);
