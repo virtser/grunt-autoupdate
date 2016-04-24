@@ -28,8 +28,11 @@ module.exports = function (grunt) {
     if( previousPkgVersion !== pkgVersion ){
       grunt.log.subhead('New package.json version detected (from '+previousPkgVersion+' to '+pkgVersion+')');
       
-      grunt.log.writeln('Running npm * bower install...');
-      require('child_process').execSync('npm install; bower install', {stdio:[0,1,2]});
+      grunt.log.writeln('Running npm install...');
+      require('child_process').execSync('npm install', {stdio:[0,1,2]});
+
+      grunt.log.writeln('Running bower install...');
+      require('child_process').execSync('bower install', {stdio:[0,1,2]});
 
       grunt.log.writeln('... done updating module dependencies!');
 
