@@ -54,7 +54,7 @@ Done, without errors.
 
 ```js
 grunt.initConfig({
-  autoupdate: {
+  depsupdate: {
     options: {
       pkgFile : '.pkg',
       npmCheck: true,
