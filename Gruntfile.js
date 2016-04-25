@@ -1,8 +1,9 @@
 /*
- * Grunt Auto Update
- * https://github.com/erwanjegouzo/grunt-auto-update
+ * Grunt Local Dependencies Update
+ * https://github.com/virtser/grunt-local-deps-update
  *
  * Copyright (c) 2014 Erwan Jegouzo
+ * Copyright (c) 2016 David Virtser 
  * Licensed under the MIT license.
  */
 
@@ -34,7 +35,6 @@ module.exports = function (grunt) {
     }
 
   });
-
 
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-jshint');
