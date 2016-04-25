@@ -1,3 +1,5 @@
+* This plugin was originally called [grunt-autoupdate](https://github.com/erwanjegouzo/grunt-autoupdate) and written by Erwan Jegouzo.
+
 # grunt-local-deps-update
 
 > Detects and updates local dependencies if package.json or bower.json version changed.  
