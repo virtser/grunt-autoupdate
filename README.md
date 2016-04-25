@@ -1,6 +1,6 @@
 * This plugin was originally called [grunt-autoupdate](https://github.com/erwanjegouzo/grunt-autoupdate) and written by Erwan Jegouzo.
 
-# grunt-local-deps-update
+# grunt-local-deps-update [![npm version](https://badge.fury.io/js/grunt-local-deps-update.svg)](https://badge.fury.io/js/grunt-local-deps-update)
 
 > Detects and updates local dependencies if package.json or bower.json version changed.  
 Why? If your node_modules or bower_components folder is not under version control, then you would probably have to notify the team that the package.json or bower.json changed and everyone would have to run "npm install" or "bower install". While this workflow could work, this is not very reliable!  
