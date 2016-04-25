@@ -75,7 +75,7 @@ module.exports = function (grunt) {
         }
       }
 
-      if (warnArray)
+      if (warnArray.length > 0)
         grunt.warn(warnArray.toString());
 
       var args = process.argv.splice(2, process.argv.length);
