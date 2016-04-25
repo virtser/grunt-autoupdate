@@ -2,8 +2,7 @@
  * Grunt Local Dependencies Update
  * https://github.com/virtser/grunt-local-deps-update
  *
- * Copyright (c) 2014 Erwan Jegouzo
- * Copyright (c) 2016 David Virtser 
+ * Copyright (c) 2016 Erwan Jegouzo, David Virtser
  * Licensed under the MIT license.
  */
 

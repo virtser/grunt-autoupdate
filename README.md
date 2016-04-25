@@ -2,8 +2,8 @@
 
 # grunt-local-deps-update
 
-> Detects and updates local dependencies if package.json or bower.json version changed.  
-Why? If your node_modules or bower_components folder is not under version control, then you would probably have to notify the team that the package.json or bower.json changed and everyone would have to run "npm install" or "bower install". While this workflow could work, this is not very reliable!  
+> Detects and updates local dependencies if package.json or bower.json version changed.
+Why? If your node_modules or bower_components folder is not under version control, then you would probably have to notify the team that the package.json or bower.json changed and everyone would have to run "npm install" or "bower install". While this workflow could work, this is not very reliable!
 Now you have grunt-local-deps-update which notfies a team member with outdated dependencies and auto install them if enabled.
 
 
@@ -27,7 +27,7 @@ grunt.loadNpmTasks('grunt-local-deps-update');
 ## The "depsupdate" task
 
 ### Overview
-The task doesn't require any configuration.  
+The task doesn't require any configuration.
 Simply add it to your default task, or make sure it's the first task being executed.
 
 ```
@@ -60,8 +60,8 @@ grunt.initConfig({
     options: {
       pkgFile : '.pkg',
       npmCheck: true,
-      bowerCheck: true,
-      warnOnly: false
+      bowerCheck: false,
+      warnOnly: true
     }
   },
 })
